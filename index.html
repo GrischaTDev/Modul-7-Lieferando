@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Lieferando - Wir bringens nach Hause</title>
+</head>
+<body onload="showDishes(), showShoppingBasket()">
+    <header>
+        <a href=""><img class="logo" src="./img/logo.svg" alt="" srcset=""></a>
+        <div>Speisekarte</div>
+        <div class="header-right">
+            <a href=""><img class="header-right-flag" src="./img/german-flag.svg" alt=""></a>
+            <a href=""><img class="header-right-menu" src="./img/burger-menu.svg" alt=""></a>
+        </div>
+    </header>
+
+    <section class="content">
+        <main id="close">
+            <img class="head-img" src="./img/pizzaria-header.jpg" alt="">
+            <div></div>
+            <div class="restaurant-info">
+                <div class="restaurant-logo">
+                    <img src="./img/Paradies Pizza.png" alt="">
+                </div>
+                <div class="restaurant-name">
+                    <h2>Paradies Pizza & Döner</h2>
+                    <div class="info-like">
+                        <img src="./img/info.svg" alt="info">
+                        <img src="./img/like.svg" alt="like">
+                    </div>
+                </div>
+                <div class="restaurant-rating">
+                    <div class="restaurant-rating-stars">
+                        <img src="./img/star.svg" alt="">
+                        <img src="./img/star.svg" alt="">
+                        <img src="./img/star.svg" alt="">
+                        <img src="./img/star.svg" alt="">
+                        <img src="./img/star.svg" alt="">
+                    </div>
+                    <span>346 Bewertungen</span>
+                </div>
+                <div class="delivery-costs">
+                    <div class="order-value"><img src="./img/shopping-bag.svg" alt="">Min. 15 €</div>
+                    <div class="delivery"><img src="./img/bike.svg" alt="">3 €</div>
+                    
+                </div>
+                <menu>
+                    <a href="">Beliebt</a>
+                    <a href="">Döner</a>
+                    <a href="">Lahmacun</a>
+                    <a href="">Pizza</a>
+                    <a href="">Salate</a>
+                    <a href="">Pasta</a>
+                </menu>
+            </div>
+            <div id="dishes-list"></div>    
+
+            <div id="mobile-pay-button"></div>    
+        </main>
+
+        <aside id="basket" class="shopping-basket d-none-mobile">
+            <h2>Warenkorb</h2>
+            <div id="close" class="close-mobile-basket" onclick="mobileBasketoff()">Weitere Produkte hinzufügen</div>
+            <div id="basket-list"></div>   
+            <div id="basket-list-prices"></div>   
+        </aside>
+    </section>
+
+    <div id="pay-popup"></div>
+
+    <footer class="footer">
+        <span>©2023</span>
+    </footer>
+
+
+    
+</body>
+</html>
